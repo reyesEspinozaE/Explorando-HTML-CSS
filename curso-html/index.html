@@ -30,26 +30,85 @@
 
         <style>
             body{
-                background: rgb(231, 203, 125);
+                background: rgb(88, 214, 113);
             }
         </style>
     </head>
     <body>
-        <h1>Portfolio de @Everth</h1>
+    <header>
+        <h1>Portfolio de @Everth 👨🏽‍💻</h1>
 
-        <p>Cuatro años como estudiante de desarrollo web en la <strong>Universidad de Costa Rica</strong></p>
+        <nav>
+            <a href="#experiencia">Experiencia</a>
+            <a href="#proyectos">Proyectos</a> <!-- Enlaces internos-->
+            <a href="https://twitch.tv"
+            target="_blank" 
+            rel="noreferrer"
+            >Twitch</a>
+            <!-- Con target se redirige a una ventana nueva en el navegador-->
+            <!-- Noreferrer se usa para no guardar info sobre la 
+            pagina de la que viene el user-->
+        </nav>
+    </header>
+    <main>
+        <p>+4 años de experiencia en desarrollo web
+            como <strong>estudiante en Universidad de Costa Rica</strong></p>
 
-
-        <h2>Experiencia</h2>
-        <p><strong>Estudiante en</strong> Universidad de Costa Rica</p>
+        <h2 id="experiencia">Experiencia</h2>
         <ul>
-            <li>Desarrollo juego 2D, Java.</li>
-            <li>Proyecto MVC, Rect.</li>
-            <li>Proyecto MVC, PHP.</li>
+            <li>
+                2020 - Now, Universidad de Costa Rica.
+            </li>
         </ul>
         
-        <img width="200" height="250" title="Foto de @Everth" src="img/Me.jpg" alt="Esta es una foto del @Everth">
-        
+        <a download href="/img/Me.jpg">
+            <img id="photo-image" width="200" height="250" title="Foto de Everth"
+            alt="Esta es una foto del Everth, sonriendo" src="/img/Me.jpg">
+        </a>        
+
+        <aside>
+            <header>
+                <h3>Mis tecnologías favoritas</h3>
+            </header>
+            <ol>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+            </ol>
+        </aside>
+
+        <section>
+            <article>
+                <header>
+                    <h4 id="proyectos">Proyectos realizados</h4>
+                </header>
+                <ol>
+                    <li>Desarrollo juego 2D, Java.</li>
+                    <li>Proyecto MVC, Rect.</li>
+                    <li>Proyecto MVC, PHP.</li>
+                </ol>
+            </article>
+
+            <article>
+                <header>
+                    <h5>Sitio web Corporativo</h5>
+                </header>
+                <p>
+                    Desarrollo de un sitio web con una 
+                    interfaz amigable y moderna.
+                </p>
+                <footer>
+                    <small>Tecnologías usadas HTML, CSS, JavaScript</small>
+                </footer>
+            </article>
+            <div>Aplicación Web de E-commerce</div>
+            <div>
+                Creación de una plataforma de comercio electrónico
+                para una tienda local.
+            </div>
+        </section>
         <input type="text" placeholder="text">
         <br>
         <input type="number" placeholder="number">
@@ -64,10 +123,29 @@
         <br>
         <input type="image" title="Img">
         <br> 
+        <section>
+            <h2>Formulario de contacto</h2>
+            <form method="post" action="/">
+                <fieldset>
+                    <legend>Información personal</legend>
+                    
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" placeholder="Everth Reyes">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" placeholder="example@email.com">
+                </fieldset>
+            </form>
+        </section>
+    </main>
     </body>
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2023 - 2023
+            Copyright &copy; 2023 - El portafolio de un estudiante 
+        </div>
+        <div>
+            <a href="mailto:everthreyes13@gmail.com">Envíame un correo</a>
+            <a href="tel:+50671121459">Llámame</a>
+            <a href="whatsapp://send?text=Hola mundo pa!">WhatsApp</a>
         </div>
     </footer>
 </html>
